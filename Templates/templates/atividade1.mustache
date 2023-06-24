@@ -1,0 +1,13 @@
+<form action="page1" method="get">
+Texto: <input type="text" name="texto" value="{{texto}}"/>
+<input type="submit" value="Enviar" />
+</form>
+
+{{#textoinvertido}}
+<h2>O texto invertido é <mark>{{.}}</mark></h2>
+{{/textoinvertido}}
+
+{{^textoinvertido}}
+<i>Informe um texto e clique em ok</i>
+{{/textoinvertido}}
+<p><a href="/">Inicio</a></p>

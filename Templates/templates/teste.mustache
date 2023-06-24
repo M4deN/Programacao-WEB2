@@ -1,0 +1,13 @@
+{{>cabecalho}}
+        {{#titulo}}
+            <h1>{{titulo}}</h1>
+            <blockquote>{{descricao}}</blockquote>
+        {{/titulo}}
+        {{^titulo}}
+            <h1>Sem titulo</h1>
+        {{/titulo}}
+        <ul>
+        {{#menu}}<li><a href="{{url}}">{{label}}</a></li>{{/menu}}
+        </ul>
+    </body>
+</html>

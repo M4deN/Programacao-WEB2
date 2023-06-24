@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intranet</title>
+</head>
+<body>
+  <h1>Bem-vindo(a), {{username}}!</h1>
+  <form method="post" action="/salvanome">
+    <label for="username">Nome:</label>
+    <input type="text" id="username" name="username" value="{{username}}" required>
+    <button type="submit">Salvar</button>
+  </form>
+  <br>
+  <a href="/logout">Sair</a>
+</body>
+</html>

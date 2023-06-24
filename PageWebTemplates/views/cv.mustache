@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meu Currículo</title>
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <ul>
+      {{#links}}
+      <li><a href="{{ url }}">{{ name }}</a></li>
+      {{/links}}
+    </ul>
+    <h2>Informações Pessoais</h2>
+    <ul>
+      <li>Nome: {{ name }}</li>
+      <li>E-mail: {{ email }}</li>
+      <li>Telefone: {{ phone }}</li>
+      <li>Cidade: {{ city }}</li>
+    </ul>
+    <h2>Formação</h2>
+    <ul>
+    
+      {{#education}}
+      <li>Grau: {{ degree }}
+       Curso: {{ field }} 
+       Instiuição: {{ institution }}</li>
+      {{/education}}
+    </ul>
+    <h2>Experiência Profissional</h2>
+    <ul>
+      {{#experience}}
+      <li>{{ position }} - {{ company }} ({{ start }} - {{ end }} -  {{ description }})</li>
+      {{/experience}}
+    </ul>
+  </body>
+</html>

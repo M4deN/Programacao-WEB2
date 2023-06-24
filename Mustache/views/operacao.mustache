@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Calculadora</title>
+</head>
+<body>
+  <h1>Calculadora</h1>
+
+  <form method="get" action="/operacao/{{operacao}}">
+    <label for="x">X:</label>
+    <input type="number" name="x" id="x" value="{{x}}" required>
+
+    <label for="y">Y:</label>
+    <input type="number" name="y" id="y" value="{{y}}" required>
+
+    <select name="operacao" id="operacao">
+      <option value="soma" {{#eq operacao 'soma'}}selected{{/eq}}>Soma</option>
+      <option value="subtracao" {{#eq operacao 'subtracao'}}selected{{/eq}}>Subtração</option>
+      <option value="multiplicacao" {{#eq operacao 'multiplicacao'}}selected{{/eq}}>Multiplicação</option>
+      <option value="divisao" {{#eq operacao 'divisao'}}selected{{/eq}}>Divisão</option>
+    </select>
+
+    <button type="submit">Calcular</button>
+  </form>
+
+  {{#resultado}}
+    <p>
+

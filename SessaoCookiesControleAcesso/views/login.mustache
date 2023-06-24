@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+  {{#error}}
+    <p style="color: red;">{{error}}</p>
+  {{/error}}
+  <form method="post" action="/login">
+    <label for="username">Usuário:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+    <label for="password">Senha:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <label for="remember">Lembrar usuário</label>
+    <input type="checkbox" id="remember" name="remember">
+    <br>
+    <button type="submit">Entrar</button>
+  </form>
+</body>
+</html>

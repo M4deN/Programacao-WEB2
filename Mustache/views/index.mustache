@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Reverso</title>
+  </head>
+  <body>
+    <h1>Reverso</h1>
+
+    <form method="POST">
+      <div>
+        <label for="inputText">Insira um texto:</label>
+        <input type="text" id="inputText" name="inputText" value="{{inputText}}" />
+      </div>
+      <div>
+        <button type="submit">Inverter</button>
+      </div>
+    </form>
+
+    {{#error}}
+      <p>{{error}}</p>
+    {{/error}}
+
+    {{#reversedText}}
+      <h2>Texto invertido:</h2>
+      <p>{{reversedText}}</p>
+    {{/reversedText}}
+  </body>
+</html>

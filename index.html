@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Atividades em JavaScript</title>
+  </head>
+  <body>
+    <h1>Atividades em JavaScript</h1>
+
+    <h2>Contagem de Vogais</h2>
+    <label for="texto">Digite um texto:</label>
+    <input type="text" id="texto">
+    <button onclick="contarVogais()">Contar Vogais</button>
+    <p id="resultadoVogais"></p>
+
+    <h2>Contagem de Caractere</h2>
+    <label for="texto2">Digite um texto:</label>
+    <input type="text" id="texto2">
+    <br>
+    <label for="caractere">Digite um caractere:</label>
+    <input type="text" id="caractere" maxlength="1">
+    <button onclick="contarCaractere()">Contar Caractere</button>
+    <p id="resultadoCaractere"></p>
+
+    <h2>Tabuada</h2>
+    <label for="numero">Digite um número:</label>
+    <input type="number" id="numero">
+    <button onclick="gerarTabuada()">Gerar Tabuada</button>
+    <ul id="tabuada"></ul>
+
+    <script>
+      function contarVogais() {
+        const texto = document.getElementById('texto').value;
+        const vogais = ['a', 'e', 'i', 'o', 'u'];
+        let contador = 0;
+
+        for (let letra of texto.toLowerCase()) {
+          if (vogais.includes(letra)) {
+            contador++;
+          }
+        }
+
+        const resultado = document.getElementById('resultadoVogais');
+        resultado.textContent = `O texto "${texto}" possui ${contador} vogais.`;
+      }
+
+      function contarCaractere() {
+        const texto = document.getElementById('texto2').value;
+        const caractere = document.getElementById('caractere').value;
+        let contador = 0;
+
+        for (let letra of texto) {
+          if (letra === caractere) {
+            contador++;
+          }
+        }
+
+        const resultado = document.getElementById('resultadoCaractere');
+        resultado.textContent = `O texto "${texto}" possui ${contador} ocorrências do caractere "${caractere}".`;
+      }
+
+      function gerarTabuada() {
+        const numero = parseInt(document.getElementById('numero').value);
+        const tabuada = [];
+
+        for (let i = 1; i <= 10; i++) {
+          tabuada.push(`<li>${numero} x ${i} = ${numero * i}</li>`);
+        }
+
+        const lista = document.getElementById('tabuada');
+        lista.innerHTML = tabuada.join('');
+      }
+    </script>
+  </body>
+</html>
+

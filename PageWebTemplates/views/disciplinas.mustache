@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <ul>
+      {{#disciplinas}}
+      <li>
+        {{ codigo }}
+        <h2>{{ name }}</h2>
+        <p>{{ resumo }}</p>
+      </li>
+      {{/disciplinas}}
+    </ul>
+  </body>
+</html>

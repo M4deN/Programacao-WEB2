@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mapa do site</title>
+    <style>
+      /* Define a aparência da árvore */
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        margin-left: 1em;
+        position: relative;
+      }
+      li:before {
+        content: "";
+        position: absolute;
+        left: -1em;
+        top: 0.5em;
+        border-left: 1px solid black;
+        height: calc(100% - 1em);
+      }
+      li:last-child:before {
+        height: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Define a estrutura da árvore utilizando listas não ordenadas (ul) e itens de lista (li) -->
+    <ul>
+      <li>Home
+        <ul>
+          <li>Sobre nós
+            <ul>
+              <li>Quem somos</li>
+              <li>Nossa história</li>
+            </ul>
+          </li>
+          <li>Produtos
+            <ul>
+              <li>Eletrônicos
+                <ul>
+                  <li>Telefones</li>
+                  <li>Tablets</li>
+                  <li>Computadores</li>
+                </ul>
+              </li>
+              <li>Moda
+                <ul>
+                  <li>Roupas</li>
+                  <li>Calçados</li>
+                  <li>Acessórios</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Contato</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

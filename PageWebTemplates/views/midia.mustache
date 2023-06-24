@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+
+    <h2>Redes Sociais</h2>
+    <ul>
+      {{#redes}}
+      <li><a href="{{ url }}">{{ name }}</a></li>
+      {{/redes}}
+    </ul>
+
+    <h2>Fotos</h2>
+    <ul>
+      {{#fotos}}
+      <li><a href="{{ url }}">{{ nome }}</a></li>
+      {{/fotos}}
+    </ul>
+  </body>
+</html>

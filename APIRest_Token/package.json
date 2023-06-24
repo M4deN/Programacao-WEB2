@@ -1,0 +1,22 @@
+{
+  "name": "apirest_token",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e mustache,js,css,html index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.3.5",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "joi": "^17.9.1",
+    "jsonwebtoken": "^9.0.0",
+    "mustache": "^4.2.0",
+    "mustache-express": "^1.3.2",
+    "nodemon": "^2.0.22"
+  }
+}
