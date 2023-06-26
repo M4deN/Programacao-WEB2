@@ -8,45 +8,47 @@ Este repositório contém os exercícios e projetos desenvolvidos ao longo da di
 2. Desenvolvimento de aplicações Web em camadas.
 3. Linguagens de programação para Web.
 4. Integração de aplicações Web com banco de dados.
-5. Frameworks para o desenvolvimento de aplicações Web.
+5. Frameworks para o desenvolvimento de aplicações Web back-end.
    - Express
    - Cookies
-   - Sessões e Passport
+   - Sessões
    - API REST
    - MongoDB
    - Mongoose
    - Sequelize
    - Mustache
+   - JWT
+   - Passport
+   - MySQL
 
-## Exercícios
+## Conteúdo
 
 Aqui estão alguns dos exercícios realizados durante a Disciplina:
 
 ### Express Generator: Aplicação de apresentação em camadas
 
-Este exercício consiste no desenvolvimento de uma aplicação de apresentação em camadas utilizando o framework Express.js.
+- Consiste no desenvolvimento de uma aplicação de apresentação em camadas utilizando o framework Express.js.
 
 ### APIREST TOKEN: Autenticação de usuários
 
-Neste exercício, foi implementada a autenticação de usuários utilizando cookies, sessões.
+- Neste exercício, foi implementada a autenticação de usuários utilizando cookies, sessões.
 
-Pasta: [APIRest_Token](./APIRest_Token)
+- Pasta: [APIRest_Token](./APIRest_Token)
 
-### Exercício API REST
+### API REST MongoDB
 
-O exercício consiste na criação de uma API REST utilizando o framework Express.js, o banco de dados MongoDB e a biblioteca Mongoose.
+- Consiste na criação de uma API REST utilizando o framework Express.js, o banco de dados MongoDB e a biblioteca Mongoose.
 
-Pasta: [APIRest_Mongo](./APIRest_Mongo)
 
-### Exercício Integração com banco de dados relacional
+### Integração com banco de dados Relacional
 
-Exercício que integra uma aplicação Web com um banco de dados relacional utilizando o ORM Sequelize.
+- Integração de uma aplicação Web com um banco de dados relacional utilizando o ORM Sequelize.
 
 ## Projeto Final
 
-O projeto final desenvolvido durante o curso foi um sistema Web em camadas com API REST, utilizando o framework Express.js e o banco de dados MongoDB.
+- O projeto final desenvolvido durante o curso foi um sistema Web em camadas com API REST, utilizando o framework Express.js e o banco de dados MongoDB.
 
-Pasta: [projeto-final](./Projeto_WEB)
+- Pasta: [projeto-final](./Projeto_WEB)
 
 ## Como utilizar este repositório
 
