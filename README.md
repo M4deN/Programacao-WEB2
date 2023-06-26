@@ -48,7 +48,7 @@ Aqui estão alguns dos exercícios realizados durante a Disciplina:
 
 - O projeto final desenvolvido durante o curso foi um sistema Web em camadas com API REST, utilizando o framework Express.js e o banco de dados MongoDB.
 
-- Pasta: [projeto-final](./Projeto_WEB)
+- Pasta: [Projeto-Final](https://github.com/M4deN/Projeto_WEB)
 
 ## Como utilizar este repositório
 
